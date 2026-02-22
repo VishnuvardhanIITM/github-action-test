@@ -1,0 +1,16 @@
+name: Demo Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 21f3000557@ds.study.iitm.ac.in
+        run: echo "Hello from GitHub Actions!"
